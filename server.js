@@ -20,7 +20,7 @@ app.use(notFound);
 app.use(errorHandlerMiddleware);
 
 const port = process.env.PORT || 5000;
-
+const ipAddress2 = "192.168.1.106"
 // Obtenez l'adresse IP de la première interface réseau non interne
 const networkInterfaces = os.networkInterfaces();
 // console.log(networkInterfaces);
@@ -34,6 +34,6 @@ const Port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server is listening on port ${port}...`));
 
-app.listen(Port, ipAddress, () => {
+app.listen(Port, ipAddress2, () => {
   console.log(`Le serveur écoute sur ${ipAddress}:${Port}.....`);
 });
